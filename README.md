@@ -15,3 +15,7 @@ then run ./install.sh
 - Run ./install
 
 - Run PlugInstall in Vim to install plugins
+
+### A more detailed vimrc
+
+[http://amix.dk/vim/vimrc.txt](http://amix.dk/vim/vimrc.txt)
