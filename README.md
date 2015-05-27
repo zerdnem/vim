@@ -7,6 +7,8 @@
 
 - Install instant-markdown
 
+`sudo pacman -S nodejs`
+
 `npm -g install instant-markdown-d`
 
 - Install powerline patched fonts
@@ -17,6 +19,4 @@ then run ./install.sh
 
 - Run PlugInstall in Vim to install plugins
 
-# OR
-
-just run ./install
+- Run ./install
