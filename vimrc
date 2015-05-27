@@ -9,7 +9,6 @@ Plug 'mattn/emmet-vim'
 Plug 'suan/vim-instant-markdown'
 Plug 'klen/python-mode'
 Plug 'airblade/vim-gitgutter'
-Plug 'bling/vim-airline'
 Plug 'tpope/vim-surround'
 Plug 'morhetz/gruvbox'
 call plug#end()
