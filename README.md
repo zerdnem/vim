@@ -1,8 +1,8 @@
 # Installation
 
-- Run ./install
+- run ./install
 
-- Run PlugInstall in Vim to install plugins
+- then run PlugInstall in Vim to install plugins
 
 ### Optional
 
