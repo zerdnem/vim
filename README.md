@@ -12,6 +12,6 @@
 
 then run ./install.sh
 
-- Run PlugInstall in Vim to install plugins
-
 - Run ./install
+
+- Run PlugInstall in Vim to install plugins
