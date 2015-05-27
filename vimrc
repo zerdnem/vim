@@ -37,6 +37,9 @@ set hlsearch
 set incsearch
 set ignorecase
 set smartcase
+set nobackup
+set nowb
+set noswapfile
 set t_Co=256
 set background=dark
 colorscheme hybrid
