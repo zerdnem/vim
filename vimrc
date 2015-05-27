@@ -43,12 +43,23 @@ set t_Co=256
 set background=dark
 colorscheme hybrid
 set pastetoggle=<f5>
-set laststatus=2
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
+map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/
+map <leader>cd :cd %:p:h<cr>:pwd<cr>
+set laststatus=2
+set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l
+
 if has("gui_running")
     set guioptions-=T
     set guioptions+=e
     set t_Co=256
     set guitablabel=%M\ %t
 endif
+
+autocmd BufReadPost *
+     \ if line("'\"") > 0 && line("'\"") <= line("$") |
+     \   exe "normal! g`\"" |
+     \ endif
+     
+set viminfo^=%
