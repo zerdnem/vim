@@ -11,7 +11,6 @@ Plug 'klen/python-mode'
 Plug 'airblade/vim-gitgutter'
 Plug 'bling/vim-airline'
 Plug 'tpope/vim-surround'
-"Plug 'itchyny/lightline.vim'
 call plug#end()
 syntax on
 filetype plugin indent on
