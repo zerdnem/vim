@@ -1,5 +1,11 @@
 # Installation
 
+- Run ./install
+
+- Run PlugInstall in Vim to install plugins
+
+### Optional
+
 - Install instant-markdown
 
 `pacman -S npm`
@@ -12,9 +18,13 @@
 
 then run ./install.sh
 
-- Run ./install
+- Install webdevicons
 
-- Run PlugInstall in Vim to install plugins
+Install the plugin via Vim-Plug
+
+then add this to your vimrc `set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Plus\ Nerd\ File\ Types\ 11`
+
+more fonts here `svn export https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/trunk/patched-fonts`
 
 ### A more detailed vimrc
 
