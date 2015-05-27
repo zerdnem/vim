@@ -6,25 +6,19 @@
 
 ### Optional
 
-##### Install instant-markdown
-
-----
+- Install instant-markdown
 
 `pacman -S npm`
 
 `npm -g install instant-markdown-d`
 
-##### Install powerline patched fonts
-
-----
+- Install powerline patched fonts
 
 `git clone https://github.com/powerline/fonts`
 
 then run ./install.sh
 
-##### Install webdevicons
-
-----
+- Install webdevicons
 
 Install the plugin via Vim-Plug
 
