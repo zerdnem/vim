@@ -7,7 +7,7 @@
 
 - Install instant-markdown
 
-`sudo pacman -S nodejs`
+`pacman -S npm`
 
 `npm -g install instant-markdown-d`
 
