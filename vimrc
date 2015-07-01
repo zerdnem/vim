@@ -2,15 +2,11 @@ call plug#begin('~/.vim/plugged')
 Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/nerdcommenter'
 Plug 'w0ng/vim-hybrid'
-Plug 'myusuf3/numbers.vim'
 Plug 'mattn/gist-vim'
 Plug 'mattn/webapi-vim'
 Plug 'mattn/emmet-vim'
-Plug 'suan/vim-instant-markdown'
-Plug 'klen/python-mode'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-surround'
-Plug 'morhetz/gruvbox'
 call plug#end()
 syntax on
 filetype plugin indent on
