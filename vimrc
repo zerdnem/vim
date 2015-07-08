@@ -34,8 +34,6 @@ set smartcase
 set nobackup
 set nowb
 set noswapfile
-set background=dark
-colorscheme hybrid
 set pastetoggle=<f5>
 if has("gui_running")
     set guioptions-=T
