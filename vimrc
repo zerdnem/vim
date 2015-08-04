@@ -34,6 +34,7 @@ set nobackup
 set nowb
 set noswapfile
 set pastetoggle=<f5>
+set t_Co=256
 if has("gui_running")
     set guioptions-=T
     set guioptions+=e
