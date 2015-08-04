@@ -5,7 +5,6 @@ Plug 'w0ng/vim-hybrid'
 Plug 'mattn/gist-vim'
 Plug 'mattn/webapi-vim'
 Plug 'mattn/emmet-vim'
-Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-surround'
 call plug#end()
 syntax on
