@@ -34,6 +34,17 @@ set nobackup
 set nowb
 set noswapfile
 set pastetoggle=<f5>
+set textwidth=0
+set wrapmargin=0
+set mouse=a
+" Copy to X CLIPBOARD
+map <leader>cc :w !xsel -i -b<CR>
+map <leader>cp :w !xsel -i -p<CR>
+map <leader>cs :w !xsel -i -s<CR>
+" Paste from X CLIPBOARD
+map <leader>pp :r!xsel -p<CR>
+map <leader>ps :r!xsel -s<CR>
+map <leader>pb :r!xsel -b<CR>
 set t_Co=256
 if has("gui_running")
     set guioptions-=T
