@@ -37,6 +37,8 @@ set pastetoggle=<f5>
 set textwidth=0
 set wrapmargin=0
 set mouse=a
+set background=dark
+colorscheme hybrid
 " Copy to X CLIPBOARD
 map <leader>cc :w !xsel -i -b<CR>
 map <leader>cp :w !xsel -i -p<CR>
