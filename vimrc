@@ -14,6 +14,8 @@ Plug 'mattn/gist-vim'
 Plug 'mattn/webapi-vim'
 Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-surround'
+Plug 'Yggdroot/indentLine'
+Plug 'gregsexton/MatchTag'
 call plug#end()
 syntax on
 filetype plugin indent on
