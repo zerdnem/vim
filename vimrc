@@ -7,7 +7,7 @@
 " supertab
 " vim-nerdtree-tabs
 call plug#begin('~/.vim/plugged')
-Plug 'jiangmiao/auto-pairs'
+" Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/nerdcommenter'
 Plug 'w0ng/vim-hybrid'
 Plug 'mattn/gist-vim'
