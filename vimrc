@@ -30,6 +30,7 @@ set textwidth=79
 set shiftwidth=4
 set tabstop=4
 set expandtab
+set smarttab " let's tab key insert 'tab stops', and bksp deletes tabs.
 set softtabstop=4
 set shiftround
 set autoindent
