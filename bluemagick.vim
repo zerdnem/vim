@@ -46,11 +46,13 @@ hi Visual       term=NONE cterm=NONE ctermfg=238  ctermbg=251
 hi WarningMsg   term=NONE cterm=NONE ctermfg=242  ctermbg=NONE
 hi LineNr       term=NONE cterm=NONE ctermbg=234  ctermfg=237
 hi CursorLineNr term=NONE cterm=NONE ctermbg=237  ctermfg=16
-hi Pmenu        term=NONE cterm=NONE ctermfg=249  ctermbg=251
+hi Pmenu        term=NONE cterm=NONE ctermfg=blue  ctermbg=green
+"hi Pmenu        term=NONE cterm=NONE ctermfg=249  ctermbg=251
 hi PmenuSel     term=NONE cterm=NONE ctermfg=238  ctermbg=66
 hi PmenuSbar    term=NONE cterm=NONE ctermfg=238  ctermbg=66
 hi PmenuThumb   term=NONE cterm=NONE ctermfg=238  ctermbg=66
 hi Underlined   term=underline cterm=underline ctermfg=NONE   ctermbg=NONE
+hi MatchParen cterm=none ctermbg=green ctermfg=blue
 
 hi! link diffAdded       DiffAdd
 hi! link diffRemoved     DiffDelete
