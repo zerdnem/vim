@@ -85,6 +85,10 @@ map <leader>pp :r!xsel -p<CR>
 map <leader>ps :r!xsel -s<CR>
 map <leader>pb :r!xsel -b<CR>
 set t_Co=256
+let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
+nmap <F8> :TagbarToggle<CR>
+nnoremap <leader>. :CtrlPTag<cr>
+map <C-n> :NERDTreeToggle<CR>
 if has("gui_running")
     set guioptions+=e
     set guitablabel=%M\ %t
