@@ -1,36 +1,28 @@
-" execute pathogen#infect()
-" delimitMate
-" indenLine
-" jedi-vim
-" MatchTag
-" nerdtree
-" supertab
-" vim-nerdtree-tabs
-call plug#begin('~/.vim/plugged')
-" Plug 'jiangmiao/auto-pairs'
+    call plug#begin('~/.vim/plugged')
+Plug 'jiangmiao/auto-pairs'
+Plug 'scrooloose/nerdtree'
+Plug 'prettier/vim-prettier'
 Plug 'scrooloose/nerdcommenter'
-Plug 'w0ng/vim-hybrid'
-Plug 'mattn/gist-vim'
-Plug 'mattn/webapi-vim'
-Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-surround'
-Plug 'Yggdroot/indentLine'
-Plug 'gregsexton/MatchTag'
+Plug 'pgdouyon/vim-yin-yang'
+Plug 'joshdick/onedark.vim'
 call plug#end()
-syntax on
+"syntax on 
+"colorscheme yin
 filetype plugin indent on
 filetype indent on
-set number
 imap jk <Esc>
 let mapleader=","
 nnoremap <leader><space> :nohlsearch<CR>
 nmap ; :
 cmap w!! w !sudo tee % > /dev/null
+set nu
+set cursorline
 set textwidth=79
 set shiftwidth=4
 set tabstop=4
 set expandtab
-set smarttab " let's tab key insert 'tab stops', and bksp deletes tabs.
+set smarttab
 set softtabstop=4
 set shiftround
 set autoindent
@@ -48,8 +40,6 @@ set pastetoggle=<f5>
 set textwidth=0
 set wrapmargin=0
 set mouse=a
-set background=dark
-colorscheme hybrid
 " Move visual block
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
@@ -90,6 +80,8 @@ nmap <F8> :TagbarToggle<CR>
 nnoremap <leader>. :CtrlPTag<cr>
 map <C-n> :NERDTreeToggle<CR>
 if has("gui_running")
+    "set guifont=Hack:h22
+    set guifont=Menlo:h12
     set guioptions+=e
     set guitablabel=%M\ %t
     set guioptions-=m  "remove menu bar
@@ -97,3 +89,6 @@ if has("gui_running")
     set guioptions-=r  "remove right-hand scroll bar
     set guioptions-=L  "remove left-hand scroll bar
 endif
+let g:prettier#autoformat = 0
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue PrettierAsync
+
