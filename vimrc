@@ -1,18 +1,23 @@
-    call plug#begin('~/.vim/plugged')
+call plug#begin('~/.vim/plugged')
 Plug 'jiangmiao/auto-pairs'
-Plug 'scrooloose/nerdtree'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'mileszs/ack.vim'
+Plug 'preservim/nerdtree'
 Plug 'prettier/vim-prettier'
 Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-surround'
-Plug 'pgdouyon/vim-yin-yang'
-Plug 'joshdick/onedark.vim'
 call plug#end()
-"syntax on 
-"colorscheme yin
+cnoreabbrev Ack Ack!
+nnoremap <Leader>a :Ack!<Space>
+let g:ackprg = 'ag --nogroup --nocolor --column'
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 filetype plugin indent on
 filetype indent on
 imap jk <Esc>
-let mapleader=","
 nnoremap <leader><space> :nohlsearch<CR>
 nmap ; :
 cmap w!! w !sudo tee % > /dev/null
