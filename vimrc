@@ -6,6 +6,12 @@ Plug 'preservim/nerdtree'
 Plug 'prettier/vim-prettier'
 Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-surround'
+Plug 'nelsyeung/twig.vim'
+Plug 'itchyny/lightline.vim'
+Plug 'airblade/vim-gitgutter'
+Plug 'cormacrelf/vim-colors-github'
+Plug 'ap/vim-buftabline'
+Plug 'hrsh7th/vim-vsnip'
 call plug#end()
 cnoreabbrev Ack Ack!
 nnoremap <Leader>a :Ack!<Space>
@@ -96,4 +102,12 @@ if has("gui_running")
 endif
 let g:prettier#autoformat = 0
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue PrettierAsync
+colorscheme github
+let g:lightline = { 'colorscheme': 'github' }
+set background=light
+let g:ctrlp_show_hidden = 1
+let NERDTreeShowHidden=1
+vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
+nnoremap <right> :bnext<CR>
+nnoremap <left> :bprev<CR>
 
