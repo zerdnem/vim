@@ -12,6 +12,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'cormacrelf/vim-colors-github'
 Plug 'ap/vim-buftabline'
 Plug 'hrsh7th/vim-vsnip'
+Plug 'Yggdroot/indentLine'
 call plug#end()
 cnoreabbrev Ack Ack!
 nnoremap <Leader>a :Ack!<Space>
@@ -110,4 +111,7 @@ let NERDTreeShowHidden=1
 vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
 nnoremap <right> :bnext<CR>
 nnoremap <left> :bprev<CR>
+let g:indentLine_enabled = 1
+let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+set encoding=utf-8
 
